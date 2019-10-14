@@ -74,8 +74,4 @@ public class MainFragment extends Fragment implements MainContract.View {
         else mImageView1.setVisibility(View.VISIBLE);
     }
 
-    @Override
-    public boolean isActive() {
-        return isAdded();
-    }
 }

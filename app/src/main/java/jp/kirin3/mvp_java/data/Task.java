@@ -22,11 +22,9 @@ public class Task {
         return mId;
     }
 
-
     public String getTitle() {
         return mTitle;
     }
-
 
     public boolean isCompleted() {
         return mCompleted;

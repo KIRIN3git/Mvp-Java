@@ -7,8 +7,8 @@ android {
         applicationId "jp.kirin3.mvp_java"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
+        versionCode gererateVersionCode(versionName)
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -29,4 +29,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}
+
+static def gererateVersionCode(String versionName){
+    def versionArray = versionName.split("\\.")
+    return versionArray[0].toInteger() * 10000 + versionArray[1].toInteger() * 100 + versionArray[2].toInteger()
 }

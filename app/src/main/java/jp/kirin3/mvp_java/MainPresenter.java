@@ -30,7 +30,7 @@ public class MainPresenter implements MainContract.Presenter {
         // フラグメントにプレゼンターを渡して相互に持ち合う
         mMainView.setPresenter(this);
 
-        loadTasks();
+//        loadTasks();
         Log.w("DEBUG_DATA","END");
     }
 
@@ -51,7 +51,7 @@ public class MainPresenter implements MainContract.Presenter {
     }
 
 
-    // データを取得したりイジったりする関数をオーバーライドしている
+    // 処理の起動開始
     @Override
     public void start() {
         mMainView.showTextMsg("WORD");

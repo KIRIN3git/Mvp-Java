@@ -7,7 +7,6 @@ public interface MainContract {
         void showTextMsg(String word);
         void changeImage();
 
-        boolean isActive();
     }
     interface Presenter extends BasePresenter {
 

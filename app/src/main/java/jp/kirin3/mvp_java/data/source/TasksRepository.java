@@ -80,8 +80,6 @@ public class TasksRepository implements TasksDataSource {
             public void onDataNotAvailable() {
                 callback.onDataNotAvailable();
             }
-
-
         });
 
         Log.w("DEBUG_DATA","TaskRepository getTasks4");
